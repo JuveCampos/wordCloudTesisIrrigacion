@@ -69,6 +69,15 @@ comas <- char_class(",:.", "\n")
 patron <- c(p_1, p_2, p_3, p_4, pat_5, pat_6)   # 6 patrones distintos
 ###############
 
+##################################################
+# Filtramos tesis que no presentan el error 404 #
+# estas tesis se checaron de manera individual y efectivamente no tienen un archivo enlazado #
+tesis_buenas <- c(1:nrow(c))
+tesis_malas  <- c(54,63,90,93,108,111,123,165,171,190,230,255,268,270,306,318,334,338)
+tesis_buenas[tesis_malas] <- NA
+tesis_buenas <- na.omit(tesis_buenas)
+#################################################
+
 #########################################################################
 # Obtenemos las palabras clave de las tesis normales #
 todas_tesis <- c()
@@ -82,15 +91,6 @@ for(i in tesis_buenas) {
 }
 todas_tesis <- as.data.frame(todas_tesis)
 #########################################################################
-
-##################################################
-# Filtramos tesis que no presentan el error 404 #
-# estas tesis se checaron de manera individual y efectivamente no tienen un archivo enlazado #
-tesis_buenas <- c(1:nrow(c))
-tesis_malas  <- c(54,63,90,93,108,111,123,165,171,190,230,255,268,270,306,318,334,338)
-tesis_buenas[tesis_malas] <- NA
-tesis_buenas <- na.omit(tesis_buenas)
-#################################################
 
 todas_tesis$patron <- str_detect(todas_tesis$todas_tesis, pattern = p_2)
 
@@ -110,7 +110,7 @@ pal_clave$spc <- str_remove(pal_clave$pal_clave, pattern = p_1)
 # WordCloud #
 #############
 
-texto <- pal_clave$palabras
+texto <- pal_clave$spc
 texto <- sapply(texto, tolower)
 text_1 <- texto
 docs_1 <- Corpus(VectorSource(text_1))
