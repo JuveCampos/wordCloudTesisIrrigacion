@@ -22,6 +22,8 @@ El trabajo esta incompleto y pienso anadir el análisis de palabras incluyendo u
 
 Pienso continuarlo en el futuro, cuando aprenda un poco mas de R y cuando tenga tiempo y ganas para añadir estos casos especiales (los cuales ya empecé a checar).
 
-En caso de requerir mas informacion, tener dudas o querer ayudar a terminarlo favor de comunicarse conmigo a: jorge?juve85@hotmail.com. Criticas y sugerencias serán gustosamente recibidas.
+En caso de requerir mas informacion, tener dudas o querer ayudar a terminarlo favor de comunicarse conmigo a: 
+jorge_juve85@hotmail.com. 
+Criticas y sugerencias serán gustosamente recibidas.
 
 
