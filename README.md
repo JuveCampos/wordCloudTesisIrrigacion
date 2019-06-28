@@ -1,4 +1,4 @@
-# wordCloudTesisIrrigacion
+# Tesis Irrigacion - wordCloud
 
 El presente código de R muestra como resultado final las palabras mas usadas en una muestra de 219 resumenes de tesis de licenciatura del 2004 al 2017 disponibles para su consulta en la página del Departamento de Irrigación de la Universidad Autónoma Chapingo. El objetivo de este trabajo es el ver que clase de temas son los más trabajados por los alumnos de licenciatura de la carrera de ingeniería en irrigación.
 
